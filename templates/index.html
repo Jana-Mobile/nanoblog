@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>nanoblog</title>
+  </head>
+  <body>
+    <h1>nanoblog: home</h1>
+    <div>
+      <a href="{{ url_for('create') }}">
+        Cick here to create a new post.
+      </a>
+    </div>
+    {% for post in posts %}
+    <div>
+      <h2>{{post.title}}</h2>
+      {{post.body}}
+    </div>
+    {% endfor %}
+  </body>
+</html>

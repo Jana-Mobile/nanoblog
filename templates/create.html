@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>nanoblog</title>
+  </head>
+  <body>
+    <h1>nanoblog: create</h1>
+    <div>
+      <form id="newpost" method="POST">
+        <p>Title:<input type="text" name="title"/></p>
+        <p>Body:
+          <textarea type="text" name="body"
+                    rows="10" cols="80"
+                    form="newpost"></textarea>
+        </p>
+        <input type="submit" value="submit"/>
+      </form>
+      <div>
+        <a href="{{url_for('index')}}">[home]</a>
+      </div>
+    </div>
+  </body>
+</html>
